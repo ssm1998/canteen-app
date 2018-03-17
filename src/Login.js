@@ -1,11 +1,11 @@
 import React,  { Component } from 'react';
 import { StyleSheet, View, Image, Text, TextInput, TouchableOpacity } from 'react-native';
 
-export default class Login extends Component {
+export default class Login extends React.Component {
     render() {
         return (
             <View style = {styles.container}>
-                <Image style = {styles.background} source={require('./StartPageImg.jpg')}/>
+                <Image style = {styles.background} source={require('../StartPageImg.jpg')}/>
                 <View style = {styles.form}>
                   <TextInput
                     placeholder = "email"
