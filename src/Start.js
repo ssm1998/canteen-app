@@ -2,6 +2,7 @@ import React,  { Component } from 'react';
 import { Alert, StyleSheet, View, ImageBackground, Text, Button } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import Login from './Login';
+import SignUp1 from './SignUp1';
 
 export default class Start extends React.Component {
 
@@ -12,19 +13,23 @@ export default class Start extends React.Component {
               <View style = {styles.buttonContainer}>
                 <Button
                   onPress = {() => this.props.navigation.navigate('Login')}
-                  containerStyle = {{padding:10, height:45, overflow:'hidden', borderRadius:100, backgroundColor: 'rgba(234, 202, 251, 0.8)'}}
+                  containerStyle = {{padding:10, height:45, overflow:'hidden'}}
+                  buttonStyle = {{borderRadius:25}}
                   disabledContainerStyle = {{backgroundColor: 'grey'}}
-                  style = {{fontSize: 20, color: 'white', backgroundColor: 'rgba(233, 47, 109, 0.8)'}}
+                  style = {{fontSize: 20, color: 'white'}}
+                  color = 'rgba(233, 47, 109, 1)'
                   title = "LOGIN">
                   
                 </Button>
               </View>
               <View style = {styles.buttonContainer}>
                 <Button
-                    onPress = {() => this.props.navigation.navigate('Login')}
-                    containerStyle = {{padding:10, height:45, overflow:'hidden', borderRadius:100, backgroundColor: 'rgba(234, 202, 251, 0.8)'}}
+                    onPress = {() => this.props.navigation.navigate('SignUp1')}
+                    containerStyle = {{padding:10, height:45, overflow:'hidden'}}
+		    buttonStyle = {{borderRadius:25}}
                     disabledContainerStyle = {{backgroundColor: 'grey'}}
-                    style = {{fontSize: 20, color: 'white', backgroundColor: 'rgba(233, 47, 109, 0.8)'}}
+                    style = {{fontSize: 20, color: 'white'}}
+                    color = 'rgba(233, 47, 109, 1)'
                     title = "SIGN UP">
               
                 </Button>
@@ -46,8 +51,6 @@ const styles = StyleSheet.create({
    },
    buttonContainer: {
      margin: 20,
-     borderRadius:100,
-     backgroundColor: 'rgba(233, 47, 109, 0.8)',
    },
 
 });
@@ -59,6 +62,9 @@ const RootStack = StackNavigator(
     },
     Login: {
       screen: Login,
+    },
+    SignUp1: {
+      screen: SignUp1,
     },
   },
   {
