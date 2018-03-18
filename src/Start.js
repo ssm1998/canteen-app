@@ -8,7 +8,7 @@ export default class Start extends React.Component {
     render() {
         return (
           <View style = {styles.container}>
-            <ImageBackground style = {styles.background} source = {require('../StartPageImg.jpg')}>
+            <ImageBackground style = {styles.background} source = {require('../StartPageImgFade.jpg')}>
               <View style = {styles.buttonContainer}>
                 <Button
                   onPress = {() => this.props.navigation.navigate('Login')}
