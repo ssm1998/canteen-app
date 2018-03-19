@@ -9,7 +9,7 @@ export default class App extends React.Component {
 	
 		justifyContent: 'center', alignSelf:'center'}}
 		
-		source={require('../StartPageImgFade.jpg')}
+		source={require('./are3.png')}
 	
 		/>
 	
