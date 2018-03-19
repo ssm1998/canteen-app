@@ -1,19 +1,15 @@
 import React from 'react';
-//import FitImage from 'react-native-fit-image';
 import { StyleSheet, Text, Image, View } from 'react-native';
-//const remote = "https://www.nautilusplus.com/healthy-alternatives-junk-food/"
-//const width = Dimensions.get('window').width
 export default class App extends React.Component {
   render() {
     return (
       <View>
 	  <Image
-	  	style={{width:400, height: 100,resizeMode:'center',marginTop:50,
+	  	style={{width:400, height: 100,marginTop:50,
 	
 		justifyContent: 'center', alignSelf:'center'}}
-		//alignItems: 'center',
 		
-		source={require('./are3.png')}
+		source={require('../StartPageImgFade.jpg')}
 	
 		/>
 	
