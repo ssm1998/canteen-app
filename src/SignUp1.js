@@ -9,7 +9,7 @@ export default class App extends React.Component {
    
     
       <ImageBackground style = {{flex:1, backgroundColor: 'rgba(0, 0, 0,0.2 )'
-}} source={require('./StartPageImg.jpg')}>
+}} source={require('./StartPageImgFade.jpg')}>
      
 	  <Image
 	  	style={{width:400, height: 100,resizeMode:'center',marginTop:50,
