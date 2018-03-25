@@ -1,12 +1,11 @@
 import React,  { Component } from 'react';
-import { StyleSheet, View, Image, Text, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, ImageBackground, Text, TextInput, TouchableOpacity } from 'react-native';
 
 export default class Login extends React.Component {
     render() {
         return (
             <View style = {styles.container}>
-                <Image style = {styles.background} source={require('../StartPageImg.jpg')}/>
-                <View style = {styles.form}>
+                <ImageBackground style = {styles.background} source={require('../StartPageImg.jpg')}>
                   <TextInput
                     placeholder = "email"
                     style = {styles.input}
@@ -19,8 +18,7 @@ export default class Login extends React.Component {
                   <TouchableOpacity style = {styles.buttonContainer}>
                     <Text style = {styles.buttonText}> LOGIN </Text>
                   </TouchableOpacity>
-
-                </View>
+                </ImageBackground>
             </View>
         );
     }
@@ -31,10 +29,15 @@ const styles = StyleSheet.create({
       flex: 1,
     },
     background: {
-        flex: 1
+        flex: 1,
+        justifyContent: 'center',
+        padding: 20,
+        backgroundColor: 'rgba(255,255,255,1)',
     },
     form: {
+      flex: 1,
       padding: 20,
+      justifyContent: 'center',
     },
     input: {
       height: 40,

@@ -9,7 +9,7 @@ export default class App extends React.Component {
    
     
       <ImageBackground style = {{flex:1, backgroundColor: 'rgba(0, 0, 0,0.2 )'
-}} source={require('./StartPageImgFade.jpg')}>
+}} source={require('../StartPageImgFade.jpg')}>
      
 	  <Image
 	  	style={{width:400, height: 100,resizeMode:'center',marginTop:50,
@@ -39,7 +39,7 @@ export default class App extends React.Component {
       <TouchableOpacity activeOpacity = { .5 } onEnter={()=>console.log("onEnter!")}>
 	  <Image
 	  style={{width:200, height: 320,alignSelf:'flex-end',flexWrap:'wrap',marginLeft:0,marginTop:50}}
-	  source={require('./consumer.png')}
+	  source={require('./costumer.jpg')}
 	  />
           </TouchableOpacity>
 
