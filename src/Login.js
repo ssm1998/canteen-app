@@ -1,10 +1,10 @@
 import React,  { Component } from 'react';
-import { StyleSheet, View, ImageBackground, Text, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, ImageBackground, Text, TextInput, TouchableOpacity, KeyboardAvoidingView  } from 'react-native';
 
 export default class Login extends React.Component {
     render() {
         return (
-            <View style = {styles.container}>
+            <KeyboardAvoidingView style = {styles.container} behavior="padding">
                 <ImageBackground style = {styles.background} source={require('../StartPageImg.jpg')}>
                   <TextInput
                     placeholder = "email"
@@ -18,8 +18,9 @@ export default class Login extends React.Component {
                   <TouchableOpacity style = {styles.buttonContainer}>
                     <Text style = {styles.buttonText}> LOGIN </Text>
                   </TouchableOpacity>
+                <View style={{ height: 60 }} />
                 </ImageBackground>
-            </View>
+            </KeyboardAvoidingView>
         );
     }
 }

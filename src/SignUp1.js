@@ -39,7 +39,7 @@ export default class App extends React.Component {
       <TouchableOpacity activeOpacity = { .5 } onEnter={()=>console.log("onEnter!")}>
 	  <Image
 	  style={{width:200, height: 320,alignSelf:'flex-end',flexWrap:'wrap',marginLeft:0,marginTop:50}}
-	  source={require('./costumer.jpg')}
+	  source={require('./consumer.png')}
 	  />
           </TouchableOpacity>
 
@@ -55,6 +55,4 @@ export default class App extends React.Component {
     );
   }
 }
-
-
 
